@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <title></title>
+    <!-- Meta tag for automatic redirect after 5 seconds -->
+    <meta http-equiv="refresh" content="15; url=https://surautaqwa.github.io/surautaqwa/" />
+    <style>
+        .container {
+  position: relative;
+  width: 100%;
+}
+
+.middle {
+  position: absolute;
+  top: 33%;
+  right: 22%;
+  width: 100%;
+  text-align: center;
+  color: darkgreen;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 450;
+}
+.middle span { 
+height: 40px; /* image's height */ 
+display: table-cell; 
+vertical-align: middle; 
+line-height: 1.1;
+}
+
+img { 
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+    </style>
+</head>
+<body>
+  <body>
+ 
+      <div class="container">
+
+       <div class="middle">
+  <span id="demo" style="font-size:280px";></span>
+<span id="demi" style="font-size:110px;  font-weight: 600";></span><br>
+  <span id="dem" style="font-size:90px; font-style: italic; font-weight: 300;"></span>
+   
+</div>
+<img src="https://i.postimg.cc/0NrL0YKH/In-Shot-20251215-225830618.jpg" alt="Ramadan Karim">
+</div>
+    
+    <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 16, 2026 19:23:00").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+  
+  // Find the distance between now an the count down date
+  var distance =  now - countDownDate;
+  
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  
+   // Output the result in an element with id="demo"
+ document.getElementById("demo").innerHTML = "SALAM" ;
+document.getElementById("demi").innerHTML = " ";
+document.getElementById("dem").innerHTML = "Isra' dan Mi'raj";   
+  
+  // If the count down is over, write some text 
+  if (days < 0) { document.getElementById("demo").innerHTML =   - days;
+document.getElementById("dem").innerHTML = " Isra' & Mi'raj 1447H";   
+document.getElementById("demi").innerHTML =  " &nbsp; hari lagi";   
+  }
+}, 1000);
+
+</script>
+</body>
+</html>
